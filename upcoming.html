@@ -1,0 +1,1279 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>TripFest</title>
+	
+	<!-- Reference Bootstrap -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+	<link rel='stylesheet' type='text/css' href='assets/css/style.css'>
+	<link rel='stylesheet' type='text/css' href='assets/css/background.css'>
+
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Bungee+Inline|Lalezar|Maitree|Teko" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Audiowide" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Gentium+Basic" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow" rel="stylesheet">
+
+	<!-- Reference jQuery -->
+	<script src="https://code.jquery.com/jquery-2.2.3.js" integrity="sha256-laXWtGydpwqJ8JA+X9x2miwmaiKhn8tVmOVEigRNtP4=" crossorigin="anonymous"></script>
+
+	<!-- Latest compiled and minified JavaScript -->
+ 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+</head>
+
+<body>
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header pull-right">
+      <a class="navbar-brand " href="index.html">T R I P F E S T</a>
+    </div>
+  </div>
+</nav>
+
+<div class='wrapper'>
+	
+	<section class='main'>
+
+		<div class='instructions text-center'>
+
+			<br>
+
+			<div class='container'>
+
+				<div class='row'>
+
+					<div class='col-md-4'>
+
+						<h3 class='text1'> Choose A Festival. </h3>
+
+
+					</div>
+
+					<div class='col-md-4'>
+
+						<h3 class='text2'> Sample The Music. </h3>
+
+					</div>
+
+					<div class='col-md-4'>
+
+						<h3 class='text3'> Plan Your Trip. </h3>
+
+					</div>
+
+				</div>
+
+			</div>
+
+		</div>
+
+		<div class='effect'></div>
+
+		<div class='row text-center'>
+
+<!-- Austin City Limits -->
+
+			<div class='col-md-12'>
+
+					<div class="card">
+
+						<div class='row' id='top-card'>
+
+							<div class='col-xs-5'>
+							
+							<img src='http://www.razorgator.com/blog/wp-content/uploads/2016/06/Austin-City-Limits-Tickets.png' alt='Festival Image' class='card-img' width='240px' height='180px'>
+
+							</div>
+
+
+							<div class='col-xs-7'>
+							
+							    <h2 class='text-center card-name'> Austin City Limits </h2>
+					    
+					    		<hr width='95%'>
+
+					    		<h4 class='pull-left card-data'> <span class='card-label'>Date: </span><span class='info'> &nbsp; 10/07/2016 - 10/09/2016 </span></h4>
+
+					    		<h4 class='pull-left card-data' style='margin-top: 0px'> <span class='card-label'>Location: </span><span class='info'>&nbsp; Austin, Texas </span></h4>
+
+					    		<br>
+
+					    		<button class='btn btn-info outline btn-sm pull-left' style='width: 40%; margin: 3px 5%' onClick="window.open('http://aclfestival.com')"> Visit Site </button>
+
+					    		<button id='expander' class='btn btn-info outline btn-xs pull-right' style='width: 40%; margin: 3px 5%;'> Festival Details </button>
+							</div>
+
+					</div>
+
+		<div id='bottom-card' class='collapse collapser card-block'>
+					
+			<h5 class='text-center description'> This is an annual event held in Austin, Texas every year over multiple weekends. ACL features prominent artists from a variety of genres, attracting thousands of people from across the country. </h5>
+					
+
+			<h4 class='card-label text-center'> Performers: </h4>
+
+			<hr>
+
+
+
+			<div class='artists'>
+
+
+				<!-- The Stapletons -->
+				<div class='well well2'> 
+
+					<h4>The Stapletons </h4>
+
+					<h4> Friday | 11:15AM </h4>
+
+					<button type="button" class="btn btn-info outline" data-toggle="modal" data-target=".stapletons">Sample</button>
+
+					<div class="modal clearfix fade stapletons" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+			
+				  	<div class="modal-dialog modal-sm">
+			
+				    <div class="modal-content">
+				
+				      <div class='modal-header'>
+			
+				      	<h2 class='text-center'>The Stapletons </h2>
+			
+				      </div>
+			
+				      <div class='modal-body clearfix'>
+
+				      		<h3 class='text-center'> Most Popular Songs: </h3>
+
+
+		
+
+
+				    	  	<!-- Dallas -->
+				      		
+				      		<h4 class='text-center'> Dallas </h4>
+							
+							<audio id="dallas" src="https://p.scdn.co/mp3-preview/8973439741e85743ac0ba55d521d772fb9e24809" preload="auto"></audio>
+
+						  	
+						  	<button class='btn btn-success btn-xs' onclick="document.getElementById('dallas').play();">Play</button>
+						 
+						 	<button class='btn btn-success btn-xs' onclick="document.getElementById('dallas').pause(); document.getElementById('dallas').currentTime = 0;">Pause</button>
+
+
+						 	<br>
+
+
+
+
+						 	<!-- Superstar Revolution-->	
+
+				      		<h4 class='text-center'> Superstar Revolution</h4>
+							
+							<audio id="superstarrevolution" src="https://p.scdn.co/mp3-preview/1e313c065dd15b920cbfe06f597fed00ed477732" preload="auto"></audio>
+
+						  	
+						  	<button class='btn btn-success btn-xs' onclick="document.getElementById('superstarrevolution').play();">Play</button>
+						 
+						 	<button class='btn btn-success btn-xs' onclick="document.getElementById('superstarrevolution').pause(); document.getElementById('superstarrevolution').currentTime = 0;">Pause</button>
+
+						 	
+
+						 	<br>
+
+
+
+
+						 	<!-- Folks Of The Underground -->
+				      		<h4 class='text-center'> Folks Of The Underground </h4>
+							
+							<audio id="folks" src="https://p.scdn.co/mp3-preview/8de909d4799087b3cac60b3fd89e56cc76890b60" preload="auto"></audio>
+
+						  	
+						  	<button class='btn btn-success btn-xs' onclick="document.getElementById('folks').play();">Play</button>
+						 
+						 	<button class='btn btn-success btn-xs' onclick="document.getElementById('folks').pause(); document.getElementById('folks').currentTime = 0;">Pause</button>
+
+
+						 	<br>
+
+
+
+						 	<!-- Blonde -->
+				      		<h4 class='text-center'> Blonde </h4>
+							
+							<audio id="blonde" src="https://p.scdn.co/mp3-preview/9502c9aa73448601474ab416724e4ab284fb3218" preload="auto"></audio>
+
+						  	
+						  	<button class='btn btn-success btn-xs' onclick="document.getElementById('blonde').play();">Play</button>
+						 
+						 	<button class='btn btn-success btn-xs' onclick="document.getElementById('blonde').pause(); document.getElementById('blonde').currentTime = 0;">Pause</button>
+
+
+						 	<br>
+
+
+
+						 	<!-- Secret -->
+				      		<h4 class='text-center'> Secret </h4>
+							
+							<audio id="secret" src="https://p.scdn.co/mp3-preview/5e0d744a05049eb8c437fd72946a1a56714901e0" preload="auto"></audio>
+
+						  	
+						  	<button class='btn btn-success btn-xs' onclick="document.getElementById('secret').play();">Play</button>
+						 
+						 	<button class='btn btn-success btn-xs' onclick="document.getElementById('secret').pause(); document.getElementById('secret').currentTime = 0;">Pause</button>
+				      
+				      </div>
+
+				      <div class='modal-footer'>
+
+				      	  	<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+
+				      </div>
+
+
+				    </div>
+				  </div>
+				</div>
+
+			</div>
+
+
+
+
+
+			<!-- The Wombats -->
+			<div class='well well2'> 
+
+					<h4>The Wombats </h4>
+
+					<h4> Friday | 1:00PM </h4>
+
+					<button type="button" class="btn btn-info outline" data-toggle="modal" data-target=".wombats">Sample</button>
+
+					<div class="modal clearfix fade wombats" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+			
+				  	<div class="modal-dialog modal-sm">
+			
+				    <div class="modal-content">
+				
+				      <div class='modal-header'>
+			
+				      	<h2 class='text-center'>The Wombats </h2>
+			
+				      </div>
+			
+				      <div class='modal-body clearfix'>
+
+				      		<h3 class='text-center'> Most Popular Songs: </h3>
+
+
+		
+
+
+				    	  	<!-- Greek Tragedy -->
+				      		
+				      		<h4 class='text-center'> Greek Tragedy </h4>
+							
+							<audio id="greektragedy" src="https://p.scdn.co/mp3-preview/cceed633deb2affea32516879af237731ff1436d" preload="auto"></audio>
+
+						  	
+						  	<button class='btn btn-success btn-xs' onclick="document.getElementById('greektragedy').play();">Play</button>
+						 
+						 	<button class='btn btn-success btn-xs' onclick="document.getElementById('greektragedy').pause(); document.getElementById('greektragedy').currentTime = 0;">Pause</button>
+
+
+						 	<br>
+
+
+
+
+						 	<!-- Give Me A Try-->	
+
+				      		<h4 class='text-center'> Give Me A Try</h4>
+							
+							<audio id="givemeatry" src="https://p.scdn.co/mp3-preview/1e313c065dd15b920cbfe06f597fed00ed477732" preload="auto"></audio>
+
+						  	
+						  	<button class='btn btn-success btn-xs' onclick="document.getElementById('givemeatry').play();">Play</button>
+						 
+						 	<button class='btn btn-success btn-xs' onclick="document.getElementById('givemeatry').pause(); document.getElementById('givemeatry').currentTime = 0;">Pause</button>
+
+						 	
+
+						 	<br>
+
+
+
+
+						 	<!-- Let's Dance To Joy -->
+				      		<h4 class='text-center'> Let's Dance To Joy </h4>
+							
+							<audio id="letsdancetojoy" src="https://p.scdn.co/mp3-preview/c04d02096b7d9544f72f405224f1665298cd065c" preload="auto"></audio>
+
+						  	
+						  	<button class='btn btn-success btn-xs' onclick="document.getElementById('letsdancetojoy').play();">Play</button>
+						 
+						 	<button class='btn btn-success btn-xs' onclick="document.getElementById('letsdancetojoy').pause(); document.getElementById('letsdancetojoy').currentTime = 0;">Pause</button>
+
+
+						 	<br>
+
+
+
+						 	<!-- Be Your Shadow -->
+				      		<h4 class='text-center'> Be Your Shadow </h4>
+							
+							<audio id="beyourshadow" src="https://p.scdn.co/mp3-preview/f640cf1a997ef11d0b6aef07a41bf3f9bcc3b3ed" preload="auto"></audio>
+
+						  	
+						  	<button class='btn btn-success btn-xs' onclick="document.getElementById('beyourshadow').play();">Play</button>
+						 
+						 	<button class='btn btn-success btn-xs' onclick="document.getElementById('beyourshadow').pause(); document.getElementById('beyourshadow').currentTime = 0;">Pause</button>
+
+
+						 	<br>
+
+
+
+						 	<!-- Secret -->
+				      		<h4 class='text-center'> Jump Into The Fog </h4>
+							
+							<audio id="jumpintothefog" src="https://p.scdn.co/mp3-preview/de0abfd01af1f94568f68d7d961106c79b4063a3" preload="auto"></audio>
+
+						  	
+						  	<button class='btn btn-success btn-xs' onclick="document.getElementById('jumpintothefog').play();">Play</button>
+						 
+						 	<button class='btn btn-success btn-xs' onclick="document.getElementById('jumpintothefog').pause(); document.getElementById('jumpintothefog').currentTime = 0;">Pause</button>
+				      
+				      </div>
+
+				      <div class='modal-footer'>
+
+				      	  	<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+
+				      </div>
+
+
+				    </div>
+				  </div>
+				</div>
+
+			</div>
+
+
+
+
+
+
+
+
+			<!-- The Strumbellas -->
+			<div class='well well2'> 
+
+					<h4>The Strumbellas </h4>
+
+					<h4> Friday | 3:00PM </h4>
+
+					<button type="button" class="btn btn-info outline" data-toggle="modal" data-target=".strumbellas">Sample</button>
+
+					<div class="modal clearfix fade strumbellas" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+			
+				  	<div class="modal-dialog modal-sm">
+			
+				    <div class="modal-content">
+				
+				      <div class='modal-header'>
+			
+				      	<h2 class='text-center'>The Strumbellas </h2>
+			
+				      </div>
+			
+				      <div class='modal-body clearfix'>
+
+				      		<h3 class='text-center'> Most Popular Songs: </h3>
+
+
+		
+
+
+				    	  	<!-- Spirits -->
+				      		
+				      		<h4 class='text-center'> Spirits </h4>
+							
+							<audio id="spirits" src="https://p.scdn.co/mp3-preview/224396d96eeea89232b22df114cec2bc42f82c80" preload="auto"></audio>
+
+						  	
+						  	<button class='btn btn-success btn-xs' onclick="document.getElementById('spirits').play();">Play</button>
+						 
+						 	<button class='btn btn-success btn-xs' onclick="document.getElementById('spirits').pause(); document.getElementById('spirits').currentTime = 0;">Pause</button>
+
+
+						 	<br>
+
+
+
+
+						 	<!-- We Don't Know -->	
+
+				      		<h4 class='text-center'>We Don't Know</h4>
+							
+							<audio id="wedontknow" src="https://p.scdn.co/mp3-preview/c12ac5fd46c9bb1595dc9b67fe733ff1555062fd" preload="auto"></audio>
+
+						  	
+						  	<button class='btn btn-success btn-xs' onclick="document.getElementById('wedontknow').play();">Play</button>
+						 
+						 	<button class='btn btn-success btn-xs' onclick="document.getElementById('wedontknow').pause(); document.getElementById('wedontknow').currentTime = 0;">Pause</button>
+
+						 	
+
+						 	<br>
+
+
+
+
+						 	<!-- Shovels & Dirt -->
+				      		<h4 class='text-center'> Shovels And Dirt </h4>
+							
+							<audio id="shovelsanddirt" src="https://p.scdn.co/mp3-preview/c782536af571112457b0b109229644251345230b" preload="auto"></audio>
+
+						  	
+						  	<button class='btn btn-success btn-xs' onclick="document.getElementById('shovelsanddirt').play();">Play</button>
+						 
+						 	<button class='btn btn-success btn-xs' onclick="document.getElementById('shovelsanddirt').pause(); document.getElementById('shovelsanddirt').currentTime = 0;">Pause</button>
+
+
+						 	<br>
+
+
+
+						 	<!-- In This Life -->
+				      		<h4 class='text-center'> In This Life </h4>
+							
+							<audio id="inthislife" src="https://p.scdn.co/mp3-preview/a51448095b4aeb87d5023c11ac69739800844b14" preload="auto"></audio>
+
+						  	
+						  	<button class='btn btn-success btn-xs' onclick="document.getElementById('inthislife').play();">Play</button>
+						 
+						 	<button class='btn btn-success btn-xs' onclick="document.getElementById('inthislife').pause(); document.getElementById('inthislife').currentTime = 0;">Pause</button>
+
+
+						 	<br>
+
+
+
+						 	<!-- Wild Sun -->
+				      		<h4 class='text-center'> Wild Sun</h4>
+							
+							<audio id="wildsun" src="https://p.scdn.co/mp3-preview/90f346099a5b4a45b92dc898b7fb400bbcab13ae" preload="auto"></audio>
+
+						  	
+						  	<button class='btn btn-success btn-xs' onclick="document.getElementById('wildsun').play();">Play</button>
+						 
+						 	<button class='btn btn-success btn-xs' onclick="document.getElementById('wildsun').pause(); document.getElementById('wildsun').currentTime = 0;">Pause</button>
+				      
+				      </div>
+
+				      <div class='modal-footer'>
+
+				      	  	<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+
+				      </div>
+
+
+				    </div>
+				  </div>
+				</div>
+
+			</div>
+
+
+
+
+
+
+			<!-- Tory Lanez -->
+			<div class='well well2'> 
+
+					<h4>Tory Lanez </h4>
+
+					<h4> Friday | 5:00PM </h4>
+
+					<button type="button" class="btn btn-info outline" data-toggle="modal" data-target=".torylanez">Sample</button>
+
+					<div class="modal clearfix fade torylanez" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+			
+				  	<div class="modal-dialog modal-sm">
+			
+				    <div class="modal-content">
+				
+				      <div class='modal-header'>
+			
+				      	<h2 class='text-center'>The Strumbellas </h2>
+			
+				      </div>
+			
+				      <div class='modal-body clearfix'>
+
+				      		<h3 class='text-center'> Most Popular Songs: </h3>
+
+
+		
+
+
+				    	  	<!-- LUV -->
+				      		
+				      		<h4 class='text-center'> LUV </h4>
+							
+							<audio id="luv" src="https://p.scdn.co/mp3-preview/af62381604e3669334472697f77b2d8b9c8a1916" preload="auto"></audio>
+
+						  	
+						  	<button class='btn btn-success btn-xs' onclick="document.getElementById('luv').play();">Play</button>
+						 
+						 	<button class='btn btn-success btn-xs' onclick="document.getElementById('luv').pause(); document.getElementById('luv').currentTime = 0;">Pause</button>
+
+
+						 	<br>
+
+
+
+
+						 	<!-- Say It -->	
+
+				      		<h4 class='text-center'>Say It</h4>
+							
+							<audio id="sayit" src="https://p.scdn.co/mp3-preview/2b9fd1f9ed499dc673507e2aeb537e63e3dd22b2" preload="auto"></audio>
+
+						  	
+						  	<button class='btn btn-success btn-xs' onclick="document.getElementById('sayit').play();">Play</button>
+						 
+						 	<button class='btn btn-success btn-xs' onclick="document.getElementById('sayit').pause(); document.getElementById('sayit').currentTime = 0;">Pause</button>
+
+						 	
+
+						 	<br>
+
+
+
+
+						 	<!-- To D.R.E.A.M. -->
+				      		<h4 class='text-center'> To D.R.E.A.M. </h4>
+							
+							<audio id="todream" src="https://p.scdn.co/mp3-preview/44fa77dcd373e8bb6575974a1b77503e3c59439c" preload="auto"></audio>
+
+						  	
+						  	<button class='btn btn-success btn-xs' onclick="document.getElementById('todream').play();">Play</button>
+						 
+						 	<button class='btn btn-success btn-xs' onclick="document.getElementById('todream').pause(); document.getElementById('todream').currentTime = 0;">Pause</button>
+
+
+						 	<br>
+
+
+
+						 	<!-- Dímelo -->
+				      		<h4 class='text-center'> Dimelo </h4>
+							
+							<audio id="dimelo" src="https://p.scdn.co/mp3-preview/d570c4ced0695829bf8b7cc131776be2ff25062a" preload="auto"></audio>
+
+						  	
+						  	<button class='btn btn-success btn-xs' onclick="document.getElementById('dimelo').play();">Play</button>
+						 
+						 	<button class='btn btn-success btn-xs' onclick="document.getElementById('dimelo').pause(); document.getElementById('dimelo').currentTime = 0;">Pause</button>
+
+
+						 	<br>
+
+
+
+						 	<!-- Traphouse -->
+				      		<h4 class='text-center'> Traphouse</h4>
+							
+							<audio id="traphouse" src="https://p.scdn.co/mp3-preview/82e2d28665e63955c1d9f02c19797bae1a49411d" preload="auto"></audio>
+
+						  	
+						  	<button class='btn btn-success btn-xs' onclick="document.getElementById('traphouse').play();">Play</button>
+						 
+						 	<button class='btn btn-success btn-xs' onclick="document.getElementById('traphouse').pause(); document.getElementById('traphouse').currentTime = 0;">Pause</button>
+				      
+				      </div>
+
+				      <div class='modal-footer'>
+
+				      	  	<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+
+				      </div>
+
+
+				    </div>
+				  </div>
+				</div>
+
+			</div>
+
+
+
+
+
+
+			<!-- Flying Lotus -->
+			<div class='well well2'> 
+
+					<h4>Flying Lotus </h4>
+
+					<h4> Friday | 6:00PM </h4>
+
+					<button type="button" class="btn btn-info outline" data-toggle="modal" data-target=".flyinglotus">Sample</button>
+
+					<div class="modal clearfix fade flyinglotus" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+			
+				  	<div class="modal-dialog modal-sm">
+			
+				    <div class="modal-content">
+				
+				      <div class='modal-header'>
+			
+				      	<h2 class='text-center'>Flying Lotus </h2>
+			
+				      </div>
+			
+				      <div class='modal-body clearfix'>
+
+				      		<h3 class='text-center'> Most Popular Songs: </h3>
+
+
+		
+
+
+				    	  	<!-- Zodiac Shit -->
+				      		
+				      		<h4 class='text-center'> Zodiac Shit </h4>
+							
+							<audio id="zodiacshit" src="https://p.scdn.co/mp3-preview/afc03483410e29ada6f8443885722a32a9908a6a" preload="auto"></audio>
+
+						  	
+						  	<button class='btn btn-success btn-xs' onclick="document.getElementById('zodiacshit').play();">Play</button>
+						 
+						 	<button class='btn btn-success btn-xs' onclick="document.getElementById('zodiacshit').pause(); document.getElementById('zodiacshit').currentTime = 0;">Pause</button>
+
+
+						 	<br>
+
+
+
+
+						 	<!-- Massage Situation -->	
+
+				      		<h4 class='text-center'>Massage Situation</h4>
+							
+							<audio id="massagesituation" src="https://p.scdn.co/mp3-preview/162b3749ee81ea109fff957ec1c3d162ea50b814" preload="auto"></audio>
+
+						  	
+						  	<button class='btn btn-success btn-xs' onclick="document.getElementById('massagesituation').play();">Play</button>
+						 
+						 	<button class='btn btn-success btn-xs' onclick="document.getElementById('massagesituation').pause(); document.getElementById('massagesituation').currentTime = 0;">Pause</button>
+
+						 	
+
+						 	<br>
+
+
+
+
+						 	<!-- Never Catch Me -->
+				      		<h4 class='text-center'> Never Catch Me</h4>
+							
+							<audio id="nevercatchme" src="https://p.scdn.co/mp3-preview/b7ac41c66e8c929e3ac2ba4eb57a14de92fe7a5b" preload="auto"></audio>
+
+						  	
+						  	<button class='btn btn-success btn-xs' onclick="document.getElementById('nevercatchme').play();">Play</button>
+						 
+						 	<button class='btn btn-success btn-xs' onclick="document.getElementById('nevercatchme').pause(); document.getElementById('nevercatchme').currentTime = 0;">Pause</button>
+
+
+						 	<br>
+
+
+
+						 	<!-- Astral Plane -->
+				      		<h4 class='text-center'> Astral Plane </h4>
+							
+							<audio id="astral" src="https://p.scdn.co/mp3-preview/19b3eb7e97dc5501ec5e5e813246e163d713b0c4" preload="auto"></audio>
+
+						  	
+						  	<button class='btn btn-success btn-xs' onclick="document.getElementById('astral').play();">Play</button>
+						 
+						 	<button class='btn btn-success btn-xs' onclick="document.getElementById('astral').pause(); document.getElementById('astral').currentTime = 0;">Pause</button>
+
+
+						 	<br>
+
+
+
+						 	<!-- Coronus -->
+				      		<h4 class='text-center'> Coronus </h4>
+							
+							<audio id="coronus" src="https://p.scdn.co/mp3-preview/31b1fc0f518fef090228ed8a355b0deb6e01d1a0" preload="auto"></audio>
+
+						  	
+						  	<button class='btn btn-success btn-xs' onclick="document.getElementById('coronus').play();">Play</button>
+						 
+						 	<button class='btn btn-success btn-xs' onclick="document.getElementById('coronus').pause(); document.getElementById('coronus').currentTime = 0;">Pause</button>
+				      
+				      </div>
+
+				      <div class='modal-footer'>
+
+				      	  	<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+
+				      </div>
+
+
+				    </div>
+				  </div>
+				</div>
+
+			</div>
+
+
+
+
+
+
+
+			<!-- City And Colour -->
+			<div class='well well2'> 
+
+					<h4>City And Colour </h4>
+
+					<h4> Saturday | 2:30PM </h4>
+
+					<button type="button" class="btn btn-info outline" data-toggle="modal" data-target=".cityandcolour">Sample</button>
+
+					<div class="modal clearfix fade cityandcolour" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+			
+				  	<div class="modal-dialog modal-sm">
+			
+				    <div class="modal-content">
+				
+				      <div class='modal-header'>
+			
+				      	<h2 class='text-center'>City And Colour </h2>
+			
+				      </div>
+			
+				      <div class='modal-body clearfix'>
+
+				      		<h3 class='text-center'> Most Popular Songs: </h3>
+
+
+		
+
+
+				    	  	<!-- The Girl -->
+				      		
+				      		<h4 class='text-center'> The Girl</h4>
+							
+							<audio id="thegirl" src="https://p.scdn.co/mp3-preview/97a8dbb2d92d95340d79a9ecaa6a52f06a719630" preload="auto"></audio>
+
+						  	
+						  	<button class='btn btn-success btn-xs' onclick="document.getElementById('thegirl').play();">Play</button>
+						 
+						 	<button class='btn btn-success btn-xs' onclick="document.getElementById('thegirl').pause(); document.getElementById('thegirl').currentTime = 0;">Pause</button>
+
+
+						 	<br>
+
+
+
+
+						 	<!-- Lover Come Back -->	
+
+				      		<h4 class='text-center'>Lover Come Back</h4>
+							
+							<audio id="lovercomeback" src="https://p.scdn.co/mp3-preview/63653dd38a706a55bcf7409c4eb01da81e663264" preload="auto"></audio>
+
+						  	
+						  	<button class='btn btn-success btn-xs' onclick="document.getElementById('lovercomeback').play();">Play</button>
+						 
+						 	<button class='btn btn-success btn-xs' onclick="document.getElementById('lovercomeback').pause(); document.getElementById('lovercomeback').currentTime = 0;">Pause</button>
+
+						 	
+
+						 	<br>
+
+
+
+
+						 	<!-- Comin' Home -->
+				      		<h4 class='text-center'> Comin' Home</h4>
+							
+							<audio id="cominhome" src="https://p.scdn.co/mp3-preview/7325563d1504c1bf0f410345cb45d94275782f1d" preload="auto"></audio>
+
+						  	
+						  	<button class='btn btn-success btn-xs' onclick="document.getElementById('cominhome').play();">Play</button>
+						 
+						 	<button class='btn btn-success btn-xs' onclick="document.getElementById('cominhome').pause(); document.getElementById('cominhome').currentTime = 0;">Pause</button>
+
+
+						 	<br>
+
+
+
+						 	<!-- Wasted Love -->
+				      		<h4 class='text-center'> Wasted Love </h4>
+							
+							<audio id="wastedlove" src="https://p.scdn.co/mp3-preview/9fcc60e4b48adc2a0eaacd1aedafbaa01b1867de" preload="auto"></audio>
+
+						  	
+						  	<button class='btn btn-success btn-xs' onclick="document.getElementById('wastedlove').play();">Play</button>
+						 
+						 	<button class='btn btn-success btn-xs' onclick="document.getElementById('wastedlove').pause(); document.getElementById('wastedlove').currentTime = 0;">Pause</button>
+
+
+						 	<br>
+
+
+
+						 	<!-- i'm in Delaware -->
+				      		<h4 class='text-center'> I'm In Delaware </h4>
+							
+							<audio id="delaware" src="https://p.scdn.co/mp3-preview/f11db3a7646e4649673b66233ba0513955c0527b" preload="auto"></audio>
+
+						  	
+						  	<button class='btn btn-success btn-xs' onclick="document.getElementById('delaware').play();">Play</button>
+						 
+						 	<button class='btn btn-success btn-xs' onclick="document.getElementById('delaware').pause(); document.getElementById('delaware').currentTime = 0;">Pause</button>
+				      
+				      </div>
+
+				      <div class='modal-footer'>
+
+				      	  	<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+
+				      </div>
+
+
+				    </div>
+				  </div>
+				</div>
+
+			</div>
+
+
+
+
+
+			<!-- DJ Mel -->
+
+			<div class='well well2'> 
+
+					<h4>DJ Mel </h4>
+
+					<h4> Saturday | 5:15PM </h4>
+
+					<button class='btn btn-info outline btn-sm' >Sample </button>
+					
+			</div>
+
+
+				<!-- The Chainsmokers -->
+				<div class='well well2'> 
+
+					<h4>The Chainsmokers </h4>
+
+					<h4> Saturday | 7:30PM </h4>
+
+					<button type="button" class="btn btn-info outline" data-toggle="modal" data-target=".chainsmokers">Sample</button>
+
+					<div class="modal clearfix fade chainsmokers" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+			
+				  	<div class="modal-dialog modal-sm modal-xs-fullscreen">
+			
+				    <div class="modal-content">
+				
+				      <div class='modal-header'>
+			
+				      	<h2 class='text-center'>The Chainsmokers </h2>
+			
+				      </div>
+			
+				      <div class='modal-body clearfix'>
+
+				      		<h3 class='text-center'> Most Popular Songs: </h3>
+
+
+				    	
+				    	  	<!-- Closer -->
+				      		
+				      		<h4 class='text-center'> Closer </h4>
+							
+							<audio id="closer" src="https://p.scdn.co/mp3-preview/8d3df1c64907cb183bff5a127b1525b530992afb" preload="auto"></audio>
+
+						  	
+						  	<button class='btn btn-success btn-xs' onclick="document.getElementById('closer').play();">Play</button>
+						 
+						 	<button class='btn btn-success btn-xs' onclick="document.getElementById('closer').pause(); document.getElementById('closer').currentTime = 0;">Pause</button>
+
+
+						 	<br>
+
+
+						 	<!-- Don't Let Me Down-->
+				      		
+				      		<h4 class='text-center'> Don't Let Me Down</h4>
+							
+							<audio id="dontletmedown" src="https://p.scdn.co/mp3-preview/4f410d4293b502e25df3e782c443d1745382c3da" preload="auto"></audio>
+
+						  	
+						  	<button class='btn btn-success btn-xs' onclick="document.getElementById('dontletmedown').play();">Play</button>
+						 
+						 	<button class='btn btn-success btn-xs' onclick="document.getElementById('dontletmedown').pause(); document.getElementById('dontletmedown').currentTime = 0;">Pause</button>
+
+						 	
+
+						 	<br>
+
+
+						 	<!-- All We Know -->
+				      		<h4 class='text-center'> All We Know </h4>
+							
+							<audio id="allweknow" src="https://p.scdn.co/mp3-preview/179c414697a1599fbda0e8a1ba8c3f8764adeb34" preload="auto"></audio>
+
+						  	
+						  	<button class='btn btn-success btn-xs' onclick="document.getElementById('allweknow').play();">Play</button>
+						 
+						 	<button class='btn btn-success btn-xs' onclick="document.getElementById('allweknow').pause(); document.getElementById('allweknow').currentTime = 0;">Pause</button>
+
+
+						 	<br>
+
+
+						 	<!-- Roses -->
+				      		<h4 class='text-center'> Roses </h4>
+							
+							<audio id="roses" src="https://p.scdn.co/mp3-preview/551ca104a8e572832a6873d5d6b205c430e291fd" preload="auto"></audio>
+
+						  	
+						  	<button class='btn btn-success btn-xs' onclick="document.getElementById('roses').play();">Play</button>
+						 
+						 	<button class='btn btn-success btn-xs' onclick="document.getElementById('roses').pause(); document.getElementById('roses').currentTime = 0;">Pause</button>
+
+
+						 	<br>
+
+
+						 	<!-- Inside Out -->
+				      		<h4 class='text-center'> Inside Out </h4>
+							
+							<audio id="insideout" src="https://p.scdn.co/mp3-preview/e0bd2955b42fddc7fd9866395c39d8613dd4e083" preload="auto"></audio>
+
+						  	
+						  	<button class='btn btn-success btn-xs' onclick="document.getElementById('insideout').play();">Play</button>
+						 
+						 	<button class='btn btn-success btn-xs' onclick="document.getElementById('insideout').pause(); document.getElementById('insideout').currentTime = 0;">Pause</button>
+				      
+				      </div>
+
+				       <div class='modal-footer'>
+
+				      	  	<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+
+				      </div>
+
+
+				    </div>
+				  </div>
+				</div>
+
+			</div>
+
+
+
+			<div class='well well2'> 
+
+					<h4>Kendrick Lamar </h4>
+
+					<h4> Saturday | 8:30PM </h4>
+
+					<button class='btn btn-info outline btn-sm' >Sample </button>
+					
+			</div>
+					
+
+
+
+
+			<div class='well well2'> 
+
+					<h4>Ra Ra Riot</h4>
+
+					<h4> Sunday | 1:00PM </h4>
+
+					<button class='btn btn-info outline btn-sm' >Sample </button>
+					
+			</div>
+
+
+
+
+
+			<div class='well well2'> 
+
+					<h4>Break Science </h4>
+
+					<h4> Sunday | 3:30PM </h4>
+
+					<button class='btn btn-info outline btn-sm' >Sample </button>
+					
+			</div>
+
+
+
+
+
+			<div class='well well2'> 
+
+					<h4>Mike Snow </h4>
+
+					<h4> Sunday | 6:00PM </h4>
+
+					<button class='btn btn-info outline btn-sm' >Sample </button>
+					
+			</div>
+
+
+
+
+			<div class='well well2'> 
+
+					<h4>HAIM </h4>
+
+					<h4> Sunday | 7:00PM </h4>
+
+					<button class='btn btn-info outline btn-sm' >Sample </button>
+					
+			</div>
+
+
+
+
+			<div class='well well2'> 
+
+					<h4>Mumford & Sons </h4>
+
+					<h4> Sunday | 8:00PM </h4>
+
+					<button class='btn btn-info outline btn-sm' >Sample </button>
+					
+			</div>
+
+
+			</div>
+
+		</div>
+
+	</div>
+
+
+
+	<!-- The House Of Creatives -->
+
+			<div class='col-md-12'>
+
+					<div class="card">
+
+						<div class='row' id='top-card'>
+
+							<div class='col-xs-5'>
+							
+							<img src='https://cdn.vor.us/event/336024/406fe3dc36b44e3a95bf846ee710ef7e.image!png.453572.png.hoc_INSTAGRAM-profile-See.png' alt='Festival Image' class='card-img' width='180px' height='180px' style='margin: 10px 40px'>
+
+							</div>
+
+
+							<div class='col-xs-7'>
+							
+							    <h2 class='text-center card-name' style='font-size: 20px'> The House Of Creatives </h2>
+					    
+					    		<hr width='95%'>
+
+					    		<h4 class='pull-left card-data'> <span class='card-label'>Date: </span><span class='info'> &nbsp; 11/18/2016 - 11/19/2016 </span></h4>
+
+					    		<h4 class='pull-left card-data' style='margin-top: 0px'> <span class='card-label'>Location: </span><span class='info'>&nbsp; Miami, Florida </span></h4>
+
+					    		<br>
+
+					    		<button class='btn btn-info outline btn-sm pull-left' style='width: 40%; margin: 3px 5%' onClick="window.open('http://www.thehoc.com/')"> Visit Site </button>
+
+					    		<button id='expander2' class='btn btn-info outline btn-xs pull-right' style='width: 40%; margin: 3px 5%;'> Festival Details </button>
+							</div>
+
+					</div>
+
+		<div id='bottom-card' class='collapse collapser2 card-block'>
+					
+			<h5 class='text-center description'> While the music here primarily encompasses indie rock, House Of Creatives can be viewed more as a cultural event as a whole. People in South Beach flock here for the art and food as well, making it one of the most unique festivals in North America. </h5>
+					
+
+			<h4 class='card-label text-center'> Performers: </h4>
+
+			<hr>
+
+
+
+			<div class='artists'>
+
+
+				<!-- Flaming Lips-->
+				<div class='well'> 
+
+					<h4> Flaming Lips </h4>
+
+					<button type="button" class="btn btn-info outline" data-toggle="modal" data-target=".flaming-lips">Sample</button>
+				
+				</div>
+				
+
+				<!-- Crystal Castles -->
+					<div class='well'> 
+
+					<h4>Crystal Castles </h4>
+
+					<button class='btn btn-info outline btn-sm' >Sample </button>
+					
+					</div>
+					
+
+
+
+				<!-- Breakbot -->
+					<div class='well'> 
+
+					<h4>Breakbot</h4>
+
+					<button class='btn btn-info outline btn-sm' >Sample </button>
+					
+					</div>
+
+
+
+
+
+
+				<!-- The Drums -->
+					<div class='well'> 
+
+					<h4>The Drums </h4>
+
+					<button class='btn btn-info outline btn-sm' >Sample </button>
+					
+					</div>
+
+
+
+
+
+				<!-- Empress Of -->
+					<div class='well'> 
+
+					<h4>Empress Of</h4>
+
+					<button class='btn btn-info outline btn-sm' >Sample </button>
+					
+					</div>
+
+
+
+
+
+				<!-- Shigeto -->
+					<div class='well'> 
+
+					<h4>Shigeto </h4>
+
+					<button class='btn btn-info outline btn-sm' >Sample </button>
+					
+					</div>
+
+				</div>
+
+			</div>
+
+		</div>
+
+	</div>
+
+</div>
+
+
+
+	</section>
+
+	<footer class='main-footer'>
+
+		<br>
+
+		<br>
+
+			<h4 class='text-center'> &copy; 2016 Navin Udiaver </h4>
+
+		<br>
+
+		<br>
+
+	</footer>
+	
+</body>
+
+<script type='text/javascript'>
+
+$(document).ready(function(){
+	$(window).load(function(){
+	    $('.text1').hide().fadeIn(300);
+	    $('.text2').hide().delay(500).fadeIn();
+	    $('.text3').hide().delay(750).fadeIn();
+			$(function() {
+			    setTimeout(function() {
+			        $(".effect").hide()
+			    }, 1000);
+			});
+		$('.card').hide().delay(1000).fadeIn();
+		$('.collapse').hide();
+	});
+
+	    $("#expander").click(function(){
+      		$('.collapser').slideToggle();
+    	});
+
+	    $("#expander2").click(function(){
+      		$('.collapser2').slideToggle();
+    	});
+
+
+	});
+
+</script>
+
+<script type="text/javascript">
+
+// Pause all songs playing when another song is played
+document.addEventListener('play', function(e){
+    var audios = document.getElementsByTagName('audio');
+    for(var i = 0, len = audios.length; i < len;i++){
+        if(audios[i] != e.target){
+            audios[i].pause();
+            audios[i].currentTime = 0;
+        }
+    }
+}, true);
+
+</script>
+</html>

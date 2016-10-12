@@ -1,0 +1,268 @@
+
+body {
+	margin: 0;
+}
+
+/*****
+INTRODUCTION
+*****/
+
+.introduction {
+	height: 100vh; 
+}
+
+video { 
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    transform: translateX(-50%) translateY(-50%);
+	background-size: cover;
+	transition: 1s opacity;
+}
+.stopfade { 
+   opacity: .5;
+}
+
+.content {
+  position: relative;
+  z-index: 2;
+}
+
+.intro-span {
+	color: #fff;
+	font-family: 'Bungee Inline', cursive;
+	padding-top: 15%;
+}
+
+
+.intro-text {
+	font-size: 100px;
+}
+
+.buttons {
+	margin: 0 auto;
+}
+
+.btn.outline {
+	background: none;
+	padding: 12px 22px;
+}
+
+.btn-info.outline {
+	border: 2px solid #fff;
+	color: #fff;
+}
+.btn-info.outline:hover, .btn-info.outline:focus, .btn-info.outline:active, .btn-info.outline.active, .open > .dropdown-toggle.btn-info {
+	color: #40E0D0;
+	border-color: #40E0D0;
+}
+.btn-info.outline:active, .btn-info.outline.active {
+	border-color: #fff;
+	color: #fff;
+	box-shadow: none;
+}
+
+.intro-footer {
+	color: #fff;
+	border-top: 2px solid #fff;
+}
+/*****
+NAVBAR
+*****/
+
+.navbar {
+	margin-bottom: 0px;
+	border-bottom: 2px solid #fff;
+}
+.navbar-inverse .navbar-brand {
+	color: #fff;
+	font-family: 'Bungee Inline', cursive;
+	font-size: 20px;
+}
+
+.navbar-inverse .navbar-brand:select {
+	color: #40E0D0;
+}
+
+/***
+HOME
+***/
+
+.main {
+	min-height: 100%;
+	height: auto; 
+	clear: both;
+}
+
+.effect {
+	height: 100vh; 
+}
+.instructions {
+	color: #0099cc;
+	padding-top: 16vh;
+	margin-bottom: 0px;
+}
+
+.instructions h3{
+	font-family: 'Economica', sans-serif;
+	font-weight: bolder;
+	font-size: 25px;
+}
+
+.main-footer {
+	background-color: #222;
+	color: #fff;
+	border-top: 1px solid #fff;
+	clear: both;
+}
+
+#top-card {
+	height: 200px;
+}
+
+#bottom-card {
+	height: 450px;
+}
+
+.artists {
+	margin-top: 6px;
+	height: 350px;
+	overflow: scroll;
+}
+.card {
+	width: 600px;
+	border: 1px solid gray;
+	margin: 70px auto;
+	background-color: #222;
+}
+
+.card-img {
+	margin: 10px;
+	float: left;
+}
+
+.card-name {
+	color: #0099cc;
+	font-family: 'Audiowide', cursive;
+	font-size: 25px;
+}
+
+.card-data {
+	width: 90%
+}
+
+.card hr {
+	width: 90%;
+	margin: auto;
+}
+
+.card-label {
+	color: #FFA500;
+	font-size: 20px;
+}
+
+.info {
+	color: #fff;
+	font-size: 17px;
+}
+
+.description {
+	width: 80%;
+	margin: 10px auto 0;
+	font-family: 'Gentium Basic', serif;
+	color: white;
+}
+
+.well {
+	width: 30%;
+	margin: 2% 10%;
+	float: left;
+	height: 100px;
+	color: #00004c;
+	font-size: 1.5em;
+	background-color: #fff;
+	padding: 5px;
+
+}
+
+.well2 {
+	height: 140px;
+}
+
+.well h4 {
+	margin-top: 5px; 
+	margin-bottom: 10px;
+	font-family: 'PT Sans Narrow', sans-serif;
+}
+
+.well .btn-info.outline {
+	border: 2px solid #00004c;
+	color: #00004c;
+}
+
+.well .btn-info.outline:hover, .well .btn-info.outline:focus, .well .btn-info.outline:active, .well .btn-info.outline.active, .well .open > .well .dropdown-toggle.btn-info {
+	color: #FF3333;
+	border-color: #FF3333;
+}
+
+.modal-dialog{
+	overflow:visible;
+	min-height:100% !important;
+}
+
+.modal-header {
+	color: #444;
+	font-family: 'PT Sans Narrow', sans-serif;
+}
+
+.modal-content {
+	padding-top: 1px;
+	width: 100%;
+	margin: 10%;
+}
+
+.modal-content h3{
+	color: #666;
+	font-size: 1.1em;
+}
+
+.modal-content h4 {
+	color: #888;
+	margin-right: 10px;
+	display: inline-block;
+}
+
+.songwrapper {
+	width: 100%;
+	height: 100%;
+}
+
+.modal-content button {
+	display: inline-block;
+}
+
+@media screen and (max-width: 640px) {
+
+ 	.modal {
+ 		max-width: 60%;
+ 		margin: auto;
+ 	}
+
+
+ 	.modal-content h4 {
+ 		font-size: 1em;
+ 	}
+ 	.modal-content button {
+ 		padding: 5px;
+ 	}
+ 	.modal-footer button {
+ 		display: block;
+ 		align: left;
+ 		margin-left: 40px;
+ 	}
+}

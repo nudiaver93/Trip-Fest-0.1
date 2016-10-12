@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<title>Welcome</title>
+
+	<!-- Reference Bootstrap -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+	<link rel='stylesheet' type='text/css' href='assets/css/style.css'>
+
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Bungee+Inline|Maitree" rel="stylesheet">
+
+
+	<!-- Reference jQuery -->
+	<script src="https://code.jquery.com/jquery-2.2.3.js" integrity="sha256-laXWtGydpwqJ8JA+X9x2miwmaiKhn8tVmOVEigRNtP4=" crossorigin="anonymous"></script>
+
+
+</head>
+<body>
+
+	<video id="my-video" class="video" autoplay height='300px' width='600px' muted loop>
+			 
+		 <source src="assets/videos/intro.mp4" type="video/mp4" />
+
+	</video>
+	
+
+	<section class='introduction intro-span text-center content'>
+
+		<span class='intro-text text-default'></span>
+		
+		<br>
+
+		<div class='buttons'>
+
+			<button class='btn btn-info outline btn-lg intro-button' onclick="window.location.href='upcoming.html'"> LOOK UP FESTIVALS </button>
+
+		</div>
+
+	</section>
+
+
+	<footer class='intro-footer'>
+
+		<br>
+
+		<br>
+
+			<h4 class='text-center'> &copy; 2016 Navin Udiaver </h4>
+
+		<br>
+
+		<br>
+
+	</footer>
+
+</body>
+
+<script>
+
+(function($) {
+    $.fn.writeText = function(content) {
+        var contentArray = content.split(""),
+            current = 0,
+            elem = this;
+        setInterval(function() {
+            if(current < contentArray.length) {
+                elem.text(elem.text() + contentArray[current++]);
+            }
+        }, 50);
+    };
+})(jQuery);
+
+
+$(".intro-text").delay(3000).writeText("T R I P F E S T");
+
+$('.intro-button').hide().fadeIn(3000);
+
+</script>
+</html>
